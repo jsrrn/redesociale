@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+:root{
+ --cor1: #2f2f4a; --cor2: #343457; --cor3: #1d1d54;
+}
+body, html{
+text-align: center;
+background: linear-gradient(  #2f2f4a 0%, #343457 35%,  #1d1d54 100%);
+background-attachment: fixed;
+margin: 5;
+font-family: 'Voces', cursive;
+}
+
+.containerrow {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.75em;
+    
+}
+.item{
+width: 2500px;
+height: 150px;
+color: skyblue;
+font-size: 2em;
+
+}
+.cargo{
+    font-size: 2em;
+    
+}
+.numeros{
+    font-size: 0.5em;
+    color: white;
+}
+.transparencia{
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba( 255,255, 255, 0.1);   
+    border-radius: 15px;
+    padding: 50px;
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 2rem;
+
+}
+h1{
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    font-weight: 300;
+}
+
+img{
+    border-radius: 75%;
+    width: 200px;
+    height: 200px;
+    background-color: rgba( 255,255, 255, 0.1); 
+    box-shadow:
+    0 0 0 2px rgba(255, 255, 255, 0.9),
+    0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    margin-bottom: 50px;
+}
+
+.seguir{
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+    margin-bottom: 2rem;
+}
+a{
+    display: inline-block;
+    background:  rgba(142, 142, 237, 0.226);   
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 100px;
+    font-size: 2.5em;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-weight: bold;
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+@media screen and (min-width: 960px){
+    .teste{
+        display: flex;
+    }
+    .item{
+        width: 300px;
+        height: 30px;
+        }
+    body{
+    margin: 0 auto;
+    width: 100%;  
+    }
+    
+    .containerrow{
+        justify-content: space-between;
+        
+    }
+  
+    .containerum{
+        width: 500px;
+        height: 10px;
+        justify-content: flex-start;
+        
+        
+    
+        
+    }
+    .containerdois{
+        padding-left: 10%;
+        height: 300px;
+        width: 800px;
+        flex-direction: column;
+        margin-top: 16px;
+        
+    }
+    a{
+    padding-left: 150px;
+    padding-right: 150px;
+    flex-direction: column;
+    }
+    .containerum .transparencia {
+        width: 500px;
+        margin-top: 50px;
+    }
+}
